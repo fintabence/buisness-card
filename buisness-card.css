@@ -1,0 +1,205 @@
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ==== HELPER COLORS FOR LAYOUT ==== */
+/*
+.profile-card {
+	background-color: rgba(255, 248, 53, .3);
+}
+
+.head {
+	background-color: rgba(140, 96, 255, .3);
+}
+
+.content {
+	background-color: rgba(255, 0, 0, .3);
+}
+
+/* ==== Position ==== */
+
+.profile-card{
+  width: 50rem;
+  max-width: calc(100vw - 10px);
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  
+  .profile-card{
+    margin-top: 6.25rem;
+		}
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head, .links {
+  text-align: center;
+}
+
+.head, .content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.profile-image {
+  margin-top: 3.75rem;
+}
+
+@media (min-width: 768px) {
+  
+  .profile-image{
+			margin-top: -3.75rem;
+		}
+}
+
+/* ==== Styles ==== */
+
+body {
+  background: url('assets/photographer.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.profile-card {
+  background-color: hsla(0, 0%, 100%, .5);
+  border-radius: 4px;
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+}
+
+.head, .about {
+  margin-bottom: 10%;
+}
+
+/* Head */
+
+img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+@media (min-width: 1024px) {
+
+	img {
+	  padding: 1px;
+    background-color: #666;
+    transition: all 0.5s ease-in-out;
+    filter: grayscale(80%);
+	}
+  
+  img:hover {
+  transform: scale(1.1);
+  filter: grayscale(20%);
+  }
+
+}
+
+h1 {
+  font-size: 1.875rem;
+  font-family: Verdana;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 1.56rem;
+  font-family: Helvetica;
+  letter-spacing: -0.05em;
+}
+
+#from {
+  font-size: 1.125rem;
+  font-family: Times New Roman;
+  opacity: 70%;
+}
+
+#adress {
+  font-size: 1.1875rem;
+  opacity: 70%;
+}
+
+/* Content */
+
+.about {
+  font-size: 1.375rem;
+  text-align: justify;
+  font-family: verdana;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
+.content {
+  padding: 5% 10%;
+  border-top: 1px solid hsla(0, 0%, 30%, .8);
+}
+
+i {
+  color: rgb(0,0,0, .8);
+}
+
+@media (min-width: 768px) {
+  
+  section i {
+    color: blue;
+    transform: scale(2);
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  
+  section i {
+    color: rgb(0,0,0, .8);
+    transform: scale(1);
+    padding: .5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  
+  section i:hover {
+    transform: scale(2);
+    transition: all 0.5s ease-in-out;
+    color: blue;
+  }
+}
